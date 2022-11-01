@@ -1,3 +1,36 @@
-Substantivo Próprio de Cidade: João Monlevade, Ibirité, Belo Horizonte, São Paulo, Brasília
-Substantivo Coletivo de Animal: Manada, Cardume
-Adjetivo de Pessoa: Alto, Baixo, Bonito, Feio
+Substantivo Comum: Pessoa, Gente, País, Carro, Roupa
+Substantivo Próprio: Brasil, Rio de Janeiro, São Paulo, João, Maria
+Substantivo Simples: Cachorro, Gato, Casa, Dinheiro, Roda
+Substantivo Composto: Guarda-chuva, Cachorro-quente, Beija-flor, Passatempo, Ano luz, Cana-de-açúcar
+Substantivo Concreto: Homem, Mulher, Caneta, Mesa, Cadeira
+Substantivo Abstrato: Amor, Paz, Saúde, Felicidade, Solidão
+Substantivo Primitivo: Vida, Morte, Fome, Sede, Dor
+Substantivo Derivado: Amizade, Solidariedade, Esperança, Alegria, Tristeza
+Substantivo Coletivo: Flora, Álbum, Colmeia, Bando, Rebanho
+Verbo Regular: Falar, Correr, Pular, Cantar, Andar
+Verbo Irregular: Ser, Estar, Ter, Dar, Ir
+Verbo Defectivo: Demolir, Colorir, Explodir, Extorquir, Falir
+Verbo Abundante: Aceitar, Acender, Matar, Soltar, Salvar
+Adjetivo Simples: Pobre, Magro, Triste, Feliz, Bonito
+Adjetivo Composto: Luso-brasileiro, Superinteressante, Rosa-claro, Amarelo-ouro, Surdo-mudo
+Adjetivo Primitivo: Bom, Alegre, Puro, Triste, Notável
+Adjetivo Derivado: Articulado, Visível, Formoso, Tristonho, Facial
+Adjetivo Pátrio: Brasileiro, Carioca, Paulista, Europeu, Espanhol
+Pronomes Pessoais: Eu, Tu, Ele, Nós, Vós
+Pronomes Possessivos: Meu, Teu, Seu, Nosso, Vosso
+Pronomes Demonstrativos: Este, Aquela, Aquilo, Aquelas, Aquilo
+Pronomes Indefinidos: Alguém, Nenhum, Outro, Outros, Outras
+Pronomes Relativos: O qual, A qual, Cujo, Quanto, Onde
+Pronomes Interrogativos: Qual, Quem, Qual, Quais, Quanto
+Artigo Definido: O, A, Os, As
+Artigo Indefinido: Um, Uns, Uma, Umas
+Numeral Cardinal: Dez, Quinze, Trinta, Quarenta, Cem
+Numeral Ordinal: Primeiro, Segundo, Terceiro, Quarto, Quinto
+Numeral Fracionário: Metade, Treze avos, Terço, Quatorze avos, Meio
+Numeral Multiplicativo: Dobro, Triplo, Quadruplo, Quíntuplo, Sêxtuplo
+Numeral Coletivo: Dúzia, Centena, Dezena, Dúzias, Centenas
+Preposição: De, Ao, Por, Até, Com
+Conjunção Coordenativa: E, Nem, Todavia, Contudo, Entretanto, Mas, Ou, Portanto, Pois, Assim
+Conjunção Subordinativa: Que, Se, Como, Embora, Por mais que, Caso, Logo que
+Interjeição: Cuidado!, Olhe! Obrigado!, Pare!, Ui!, Uau!
+Advérbio: Depressa, Bastante, Muito, Ali, Embaixo, Abaixo, Certamente, Provavelmente, Talvez, Depois, Até, Inclusive, Só, Somente, Apenas
