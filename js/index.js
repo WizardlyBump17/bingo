@@ -76,20 +76,25 @@ window.searchSelected = () => {
         return
 
     const result = document.getElementById(SEARCH_RESULT)
+    const found = []
 
     for (let word of WORDS) {
         for (let storedWord of word.type.words) {
             if (text.trim().toLowerCase() !== storedWord.trim().toLowerCase())
                 continue
 
-            result.innerText = 'SIM'
-            result.style.backgroundColor = 'rgb(0, 181, 0)'
-            result.style.display = 'block'
-            return
+            found.push(word.type.type)
         }
     }
 
-    result.innerText = 'NÃO'
-    result.style.backgroundColor = 'rgb(255, 0, 0)'
+    if (found.length === 0) {
+        result.innerText = 'NÃO'
+        result.style.backgroundColor = 'rgb(255, 0, 0)'
+        result.style.display = 'block'
+        return;
+    }
+
+    result.innerText = found.map(s => s.toUpperCase()).join(', ')
+    result.style.backgroundColor = 'rgb(0, 181, 0)'
     result.style.display = 'block'
 }
