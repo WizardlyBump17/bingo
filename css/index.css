@@ -57,3 +57,10 @@
     color: white;
     display: none;
 }
+
+@media only screen and (max-width: 600px) {
+
+    #words li {
+        width: 100%;
+    }
+}
