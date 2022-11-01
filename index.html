@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bingo</title>
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <h1>BINGO GRAMATICAL</h1>
+        <ul id="words"></ul>
+
+        <div id="buttons">
+            <button class="button" onclick="uploadWords()">ENVIAR PALAVRAS</button>
+            <input type="file" id="files">
+            <br>
+
+            <button id="load-words" onclick="loadWords()" class="button">CARREGAR PALAVRAS</button>
+            <br>
+
+            <button onclick="generate()" class="button">SORTEAR</button>
+            <br>
+
+            <button onclick="clearWords()" class="button">LIMPAR</button>
+            <br>
+        </div>
+
+        <p id="extra"></p>
+    </body>
+</html>
