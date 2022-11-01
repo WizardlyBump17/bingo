@@ -16,16 +16,18 @@
         <div id="buttons">
             <button onclick="uploadWords()">ENVIAR PALAVRAS</button>
             <input type="file" id="files">
-            <br>
 
             <button id="load-words" onclick="loadWords()">CARREGAR PALAVRAS</button>
-            <br>
 
             <button onclick="generate()">SORTEAR</button>
-            <br>
 
             <button onclick="clearWords()">LIMPAR</button>
-            <br>
+
+            <div class="search">
+                <input type="text" placeholder="For sorteado?" id="search" class="text-input">
+                <button onclick="searchSelected()">FOI SORTEADO?</button>
+                <p id="search-result"></p>
+            </div>
         </div>
     </body>
 </html>

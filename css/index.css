@@ -38,3 +38,30 @@
 #files {
     display: none;
 }
+
+.text-input {
+    border: black 1px solid;
+    padding: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#search-result {
+    padding: 5px;
+    margin: 5px;
+    font-weight: bolder;
+    border-radius: 5px;
+    color: white;
+    display: none;
+}

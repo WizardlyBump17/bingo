@@ -3,6 +3,8 @@ import {WORD_TYPES} from "./global.js";
 const WORDS = []
 const GENERATED_AMOUNT = {}
 const LIST = 'words'
+const SEARCH = 'search'
+const SEARCH_RESULT = 'search-result'
 
 window.createWord = () => {
     if (WORD_TYPES.length === 0) {
@@ -66,4 +68,28 @@ window.updateWords = () => {
 
     for (let word of WORDS)
         list.appendChild(word.html);
+}
+
+window.searchSelected = () => {
+    const text = document.getElementById(SEARCH).value
+    if (!text)
+        return
+
+    const result = document.getElementById(SEARCH_RESULT)
+
+    for (let word of WORDS) {
+        for (let storedWord of word.type.words) {
+            if (text.trim().toLowerCase() !== storedWord.toLowerCase())
+                continue
+
+            result.innerText = 'SIM'
+            result.style.backgroundColor = 'rgb(0, 181, 0)'
+            result.style.display = 'block'
+            return
+        }
+    }
+
+    result.innerText = 'NÃO'
+    result.style.backgroundColor = 'rgb(255, 0, 0)'
+    result.style.display = 'block'
 }
