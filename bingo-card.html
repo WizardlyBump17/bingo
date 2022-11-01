@@ -3,12 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <title>Bingo Cards</title>
-        <script src="js/bingo-card.js"></script>
+        <script src="js/global.js" type="module"></script>
+        <script src="js/bingo-card.js" type="module"></script>
         <link rel="stylesheet" href="css/bingo-card.css">
     </head>
 
     <body>
         <div id="cards"></div>
-        <button onclick="generate()">GENERATE</button>
+        <br>
+
+        <div id="buttons">
+            <button onclick="uploadWords()">ENVIAR PALAVRAS</button>
+            <input type="file" id="files">
+            <br>
+
+            <button id="load-words" onclick="loadWords()">CARREGAR PALAVRAS</button>
+            <br>
+            <button onclick="generate()">GENERATE</button>
+        </div>
     </body>
 </html>

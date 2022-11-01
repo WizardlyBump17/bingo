@@ -1,17 +1,10 @@
+import {WORD_TYPES} from "./global.js";
+
 const WORDS = []
 const GENERATED_AMOUNT = {}
-let WORD_TYPES = []
 const LIST = 'words'
-const FILES = 'files'
 
-function createWordType(type, words) {
-    return {
-        'type': type,
-        'words': words
-    }
-}
-
-function createWord() {
+window.createWord = () => {
     if (WORD_TYPES.length === 0) {
         alert('Acabaram as palavras')
         return undefined
@@ -39,7 +32,7 @@ function createWord() {
     return word
 }
 
-function generate() {
+window.generate = () => {
     const word = createWord();
     if (!word)
         return
@@ -59,7 +52,7 @@ function generate() {
         WORD_TYPES.splice(index, 1)
 }
 
-function clearWords() {
+window.clearWords = () => {
     WORDS.splice(0)
     WORD_TYPES.splice(0)
     updateWords()
@@ -67,43 +60,10 @@ function clearWords() {
         GENERATED_AMOUNT[type] = 0
 }
 
-function updateWords() {
+window.updateWords = () => {
     const list = document.getElementById(LIST)
     list.innerHTML = ''
 
     for (let word of WORDS)
         list.appendChild(word.html);
-}
-
-function loadWords() {
-    const files = document.getElementById(FILES).files
-    if (!files || files.length === 0) {
-        alert('Nenhum arquivo selecionado')
-        return
-    }
-
-    const file = files[0]
-    const reader = new FileReader()
-    reader.onload = e => {
-        const text = e.target.result
-        loadWordsFromText(text)
-    }
-    reader.onerror = () => alert('Erro ao ler arquivo')
-    reader.readAsText(file)
-}
-
-function loadWordsFromText(text) {
-    for (let line of text.split('\n')) {
-        const data = line.split('\:')
-        const type = data[0]
-        const words = data[1].trim().split(',')
-
-        WORD_TYPES.push(createWordType(type, words))
-    }
-
-    alert('Palavras carregadas')
-}
-
-function uploadWords() {
-    document.getElementById(FILES).click()
 }
