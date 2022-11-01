@@ -25,3 +25,15 @@ body {
     border-radius: 10px;
     font-size: 15pt;
 }
+
+.text-input {
+    border: black 1px solid;
+    padding: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#generate-amount {
+    width: 50px;
+}

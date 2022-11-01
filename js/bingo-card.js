@@ -3,8 +3,15 @@ import {WORD_TYPES,} from './global.js'
 const WIDTH = 5
 const HEIGHT = 5
 const CARDS = 'cards'
+const GENERATE_AMOUNT = 'generate-amount'
 
 window.generate = () => {
+    const generateAmount = document.getElementById(GENERATE_AMOUNT).value
+    for (let i = 0; i < generateAmount; i++)
+        generateOne()
+}
+
+function generateOne() {
     const words = WORD_TYPES.map(type => type.words).flat()
 
     const div = document.createElement('div')

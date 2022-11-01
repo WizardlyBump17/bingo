@@ -39,14 +39,6 @@
     display: none;
 }
 
-.text-input {
-    border: black 1px solid;
-    padding: 10px;
-    height: 10px;
-    border-radius: 5px;
-    margin: 5px;
-}
-
 .search {
     display: flex;
     flex-direction: row;
