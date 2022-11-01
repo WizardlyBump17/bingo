@@ -79,7 +79,7 @@ window.searchSelected = () => {
 
     for (let word of WORDS) {
         for (let storedWord of word.type.words) {
-            if (text.trim().toLowerCase() !== storedWord.toLowerCase())
+            if (text.trim().toLowerCase() !== storedWord.trim().toLowerCase())
                 continue
 
             result.innerText = 'SIM'
