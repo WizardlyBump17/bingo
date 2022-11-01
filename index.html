@@ -5,7 +5,8 @@
         <title>Bingo</title>
         <script src="js/global.js" type="module"></script>
         <script src="js/index.js" type="module"></script>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/global.css">
     </head>
 
     <body>
@@ -13,17 +14,17 @@
         <ul id="words"></ul>
 
         <div id="buttons">
-            <button class="button" onclick="uploadWords()">ENVIAR PALAVRAS</button>
+            <button onclick="uploadWords()">ENVIAR PALAVRAS</button>
             <input type="file" id="files">
             <br>
 
-            <button id="load-words" onclick="loadWords()" class="button">CARREGAR PALAVRAS</button>
+            <button id="load-words" onclick="loadWords()">CARREGAR PALAVRAS</button>
             <br>
 
-            <button onclick="generate()" class="button">SORTEAR</button>
+            <button onclick="generate()">SORTEAR</button>
             <br>
 
-            <button onclick="clearWords()" class="button">LIMPAR</button>
+            <button onclick="clearWords()">LIMPAR</button>
             <br>
         </div>
     </body>
