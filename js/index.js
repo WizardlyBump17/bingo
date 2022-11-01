@@ -2,7 +2,6 @@ const WORDS = []
 const GENERATED_AMOUNT = {}
 let WORD_TYPES = []
 const LIST = 'words'
-const EXTRA = 'extra'
 const FILES = 'files'
 
 function createWordType(type, words) {
@@ -14,7 +13,7 @@ function createWordType(type, words) {
 
 function createWord() {
     if (WORD_TYPES.length === 0) {
-        extraText('Acabou')
+        alert('Acabaram as palavras')
         return undefined
     }
 
@@ -64,7 +63,6 @@ function clearWords() {
     WORDS.splice(0)
     WORD_TYPES.splice(0)
     updateWords()
-    extraText('')
     for (let type in GENERATED_AMOUNT)
         GENERATED_AMOUNT[type] = 0
 }
@@ -77,14 +75,10 @@ function updateWords() {
         list.appendChild(word.html);
 }
 
-function extraText(text) {
-    document.getElementById(EXTRA).innerText = text
-}
-
 function loadWords() {
     const files = document.getElementById(FILES).files
     if (!files || files.length === 0) {
-        extraText('Nenhum arquivo selecionado')
+        alert('Nenhum arquivo selecionado')
         return
     }
 
@@ -94,6 +88,7 @@ function loadWords() {
         const text = e.target.result
         loadWordsFromText(text)
     }
+    reader.onerror = () => alert('Erro ao ler arquivo')
     reader.readAsText(file)
 }
 
@@ -105,6 +100,8 @@ function loadWordsFromText(text) {
 
         WORD_TYPES.push(createWordType(type, words))
     }
+
+    alert('Palavras carregadas')
 }
 
 function uploadWords() {
