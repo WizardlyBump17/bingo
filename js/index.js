@@ -94,7 +94,7 @@ window.searchSelected = () => {
         return;
     }
 
-    result.innerText = found.map(s => s.toUpperCase()).join(', ')
+    result.innerText = found.filter((s, i) => found.indexOf(s, i + 1) === -1).map(s => s.toUpperCase()).join(', ')
     result.style.backgroundColor = 'rgb(0, 181, 0)'
     result.style.display = 'block'
 }
