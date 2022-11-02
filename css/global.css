@@ -31,6 +31,7 @@ body {
     border: none;
     border-radius: 10px;
     font-size: 15pt;
+    font-weight: bolder;
 }
 
 .text-input {
