@@ -16,12 +16,12 @@ Adjetivo Composto: Luso-brasileiro, Superinteressante, Rosa-claro, Amarelo-ouro,
 Adjetivo Primitivo: Bom, Alegre, Puro, Triste, Notável
 Adjetivo Derivado: Articulado, Visível, Formoso, Tristonho, Facial
 Adjetivo Pátrio: Brasileiro, Carioca, Paulista, Europeu, Espanhol
-Pronomes Pessoais: Eu, Tu, Ele, Nós, Vós
-Pronomes Possessivos: Meu, Teu, Seu, Nosso, Vosso
-Pronomes Demonstrativos: Este, Aquela, Aquilo, Aquelas, Aquilo
-Pronomes Indefinidos: Alguém, Nenhum, Outro, Outros, Outras
-Pronomes Relativos: O qual, A qual, Cujo, Quanto, Onde
-Pronomes Interrogativos: Qual, Quem, Qual, Quais, Quanto
+Pronome Pessoal: Eu, Tu, Ele, Nós, Vós
+Pronome Possessivo: Meu, Teu, Seu, Nosso, Vosso
+Pronome Demonstrativo: Este, Aquela, Aquilo, Aquelas, Aquilo
+Pronome Indefinido: Alguém, Nenhum, Outro, Outros, Outras
+Pronome Relativo: O qual, A qual, Cujo, Quanto, Onde
+Pronome Interrogativo: Qual, Quem, Qual, Quais, Quanto
 Artigo Definido: O, A, Os, As
 Artigo Indefinido: Um, Uns, Uma, Umas
 Numeral Cardinal: Dez, Quinze, Trinta, Quarenta, Cem
