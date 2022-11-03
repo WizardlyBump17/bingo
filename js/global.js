@@ -20,6 +20,11 @@ window.loadWords = () => {
         return
     }
 
+    if (WORD_TYPES.length !== 0) {
+        alert('Palavras já carregadas')
+        return
+    }
+
     const file = files[0]
     const reader = new FileReader()
     reader.onload = e => {
