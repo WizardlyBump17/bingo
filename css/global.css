@@ -25,7 +25,7 @@ body {
 #buttons button {
     cursor: pointer;
     background-color: #ff4141;
-    color: rgba(255, 255, 255, 0.9);
+    color: white;
     padding: 10px;
     margin: 5px;
     border: none;
