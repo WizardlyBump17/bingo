@@ -5,6 +5,7 @@ const GENERATED_AMOUNT = {}
 const LIST = 'words'
 const SEARCH = 'search'
 const SEARCH_RESULT = 'search-result'
+let clearWordDelay = Date.now()
 
 window.createWord = () => {
     if (WORD_TYPES.length === 0) {
@@ -55,6 +56,11 @@ window.generate = () => {
 }
 
 window.clearWords = () => {
+    if (Date.now() > clearWordDelay + 500) {
+        clearWordDelay = Date.now()
+        return
+    }
+
     WORDS.splice(0)
     WORD_TYPES.splice(0)
     updateWords()
